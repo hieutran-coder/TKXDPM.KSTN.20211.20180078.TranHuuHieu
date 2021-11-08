@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="1366.0" style="-fx-border-color: pinl;">
+         <children>
+            <ImageView>
+               <image>
+                  <Image url="@images/AIMS%202.PNG" />
+               </image>
+            </ImageView>
+            <Label text="PAYMENT" textFill="#23b1e4">
+               <font>
+                  <Font size="50.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Label layoutX="102.0" layoutY="145.0" text="Payment Method">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="134.0" layoutY="187.0" mnemonicParsing="false" text="Credit card">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="790.0" layoutY="202.0" text="Card Number:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="790.0" layoutY="290.0" text="Card Holder Name:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="790.0" layoutY="380.0" text="Expiration date:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="790.0" layoutY="470.0" text="Card Secuirity code:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField layoutX="790.0" layoutY="238.0" prefHeight="43.0" prefWidth="566.0" />
+      <TextField layoutX="790.0" layoutY="330.0" prefHeight="43.0" prefWidth="566.0" />
+      <TextField layoutX="790.0" layoutY="420.0" prefHeight="43.0" prefWidth="566.0" />
+      <TextField layoutX="790.0" layoutY="510.0" prefHeight="43.0" prefWidth="566.0" />
+      <Button layoutX="485.0" layoutY="632.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="387.0" style="-fx-background-color: red;" text="Confirm Payment" textFill="#fcf9f9">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

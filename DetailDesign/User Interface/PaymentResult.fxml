@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="100.0" prefWidth="1366.0">
+         <children>
+            <ImageView>
+               <image>
+                  <Image url="@images/AIMS.PNG" />
+               </image>
+            </ImageView>
+            <Label text="PAYMENT" textFill="#289dae">
+               <font>
+                  <Font size="50.0" />
+               </font>
+               <padding>
+                  <Insets left="30.0" top="30.0" />
+               </padding>
+            </Label>
+         </children>
+      </HBox>
+      <VBox alignment="TOP_CENTER" layoutX="337.0" layoutY="99.0" prefHeight="672.0" prefWidth="701.0">
+         <children>
+            <Label prefHeight="302.0" prefWidth="699.0" text="      PAYMENT RESULT!" textAlignment="CENTER" textFill="#4ef285">
+               <padding>
+                  <Insets top="50.0" />
+               </padding>
+               <font>
+                  <Font size="67.0" />
+               </font>
+            </Label>
+            <Label prefHeight="67.0" prefWidth="693.0" text="                                            Message" textAlignment="CENTER">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="64.0" prefWidth="467.0" style="-fx-background-color: red;" text="OK" textAlignment="CENTER" textFill="#f8f8f8">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="150.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
