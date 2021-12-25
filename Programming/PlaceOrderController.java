@@ -21,6 +21,9 @@ import views.screen.popup.PopupScreen;
  */
 public class PlaceOrderController extends BaseController{
 
+    
+    
+    private CalculateShippingFee fee;
     /**
      * Just for logging purpose
      */
@@ -149,5 +152,10 @@ public class PlaceOrderController extends BaseController{
     	return true;
     }
     
-
+    /**
+    * method for calculateShippingFee
+    * @Param: order
+    **/
+    fee = new NormalCalculateShippingFee();
+    fee.calculateShippingFee(Order order);
 }
