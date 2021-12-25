@@ -150,24 +150,4 @@ public class PlaceOrderController extends BaseController{
     }
     
 
-    /**
-     * This method calculates the shipping fees of order
-     * @param order
-     * @return shippingFee
-     */
-    public int normalCalculateShippingFee(Order order) extends calculateShippingFee{
-        Random rand = new Random();
-        int fees = (int)( ( (rand.nextFloat()*10)/100 ) * order.getAmount() );
-        LOGGER.info("Order Amount: " + order.getAmount() + " -- Shipping Fees: " + fees);
-        return fees;
-    }
-
-    public int rushCalculateShippingFee(Order order) extends calculateShippingFee {
-        Random rand = new Random();
-        int fees = (int)( ( (rand.nextFloat()*10)/100 ) * order.getAmount());
-        int additionalFee = (int)( ( (rand.nextFloat()*10)/100 ) * (20 - Integer.parseInt(expectedDeliveryTime)));
-        fees += additionalFee;
-        LOGGER.info("Order Amount: " + order.getAmount() + " -- Shipping Fees: " + fees);
-        return fees;
-    }
 }
