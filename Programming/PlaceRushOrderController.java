@@ -16,7 +16,7 @@ import entity.order.OrderMedia;
 public class PlaceRushOrderController extends PlaceOrderController{
 	private Order usualMedia;
 	private Order rushMedia;
-	
+	private CalculateShippingFee fee;
 	private static Logger LOGGER = utils.Utils.getLogger(PlaceRushOrderController.class.getName());
 	 public static final int MAX_EXPECTED_DELIVERY_TIME = 7;
 	/**
@@ -88,7 +88,16 @@ public class PlaceRushOrderController extends PlaceOrderController{
 			
 	}
 	
-	
-
-	
+	/** method for calculateShippingFee for rushOrder
+	 * @param: Order
+	 * @Return money for shippingfee
+	**/
+	public int rushCalculateShippingFee(Order order)  {
+        	Random rand = new Random();
+        	int fees = (int)( ( (rand.nextFloat()*10)/100 ) * order.getAmount());
+        	int additionalFee = (int)( ( (rand.nextFloat()*10)/100 ) * (20 - Integer.parseInt(expectedDeliveryTime)));
+        	fees += additionalFee;
+        	LOGGER.info("Order Amount: " + order.getAmount() + " -- Shipping Fees: " + fees);
+        	return fees;
+   	 }
 }
